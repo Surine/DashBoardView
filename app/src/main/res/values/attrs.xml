@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DashBoardView">
+        <!--背景色-->
+        <attr name="backgroundColor" format="color" />
+        <!--前景色-->
+        <attr name="foregroundColor" format="color" />
+
+        <!--起始和终止角度，单位角度-->
+        <attr name="startDegree" format="integer" />
+        <attr name="endDegree" format="integer" />
+        <attr name="slotDegree" format="integer"/>
+
+        <!--圆环宽度和强调宽度-->
+        <attr name="ringWidth" format="dimension" />
+        <attr name="emphasisWidth" format="dimension" />
+
+
+    </declare-styleable>
+</resources>
