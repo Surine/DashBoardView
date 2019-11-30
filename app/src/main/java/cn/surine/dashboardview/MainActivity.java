@@ -19,12 +19,13 @@ public class MainActivity extends AppCompatActivity {
         final DashBoardView dashBoardView = findViewById(R.id.dash);
         dashBoardView.setBanAdaptive(false);
         dashBoardView.setAnimDuration(300);
-        dashBoardView.setStartDegree(30);
-        dashBoardView.setEndDegree(300);
+        dashBoardView.setRingElementHeight(10);
+        dashBoardView.setRingWidth(32);
+        dashBoardView.setLadderValue(new String[]{"富强", "民主", "文明", "和谐"});
+        dashBoardView.setDegree(50, 310, 3);
         dashBoardView.setInterpolator(new OvershootInterpolator());
         dashBoardView.setForeColor(getColor(R.color.c1));
         dashBoardView.setProgress(3000 / 6000F, true);
-        dashBoardView.setLadderValue(new String[]{"富强", "民主", "文明", "和谐", "爱国", "敬业", "诚信", "友善"});
         SeekBar seekBar = findViewById(R.id.seekbar);
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override

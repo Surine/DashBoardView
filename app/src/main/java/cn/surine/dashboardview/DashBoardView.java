@@ -347,9 +347,7 @@ public class DashBoardView extends View {
     }
 
 
-    /**
-     * 设置动画
-     */
+    //设置动画
     private void animation() {
         ValueAnimator valueAnimator = ValueAnimator.ofFloat(0, progress);
         valueAnimator.setInterpolator(interpolator);
@@ -387,37 +385,15 @@ public class DashBoardView extends View {
 
 
     /**
-     * 设置起始角度
+     * 设置角度
      *
      * @param startDegree 开始角度
+     * @param endDegree   终止角度
+     * @param slotDegree  单位旋转角度
      */
-    public DashBoardView setStartDegree(int startDegree) {
+    public DashBoardView setDegree(int startDegree, int endDegree, int slotDegree) {
         this.startDegree = startDegree;
-        degreeCheck();
-        postInvalidate();
-        return this;
-    }
-
-
-    /**
-     * 结束角度
-     *
-     * @param endDegree 结束角度
-     */
-    public DashBoardView setEndDegree(int endDegree) {
         this.endDegree = endDegree;
-        degreeCheck();
-        postInvalidate();
-        return this;
-    }
-
-
-    /**
-     * 单位旋转角度
-     *
-     * @param slotDegree 单位旋转角度
-     */
-    public DashBoardView setSlotDegree(int slotDegree) {
         this.slotDegree = slotDegree;
         degreeCheck();
         postInvalidate();
